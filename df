@@ -1,0 +1,158 @@
+[33mcommit 5e928547bd02c86e100048ec4e486eb3a4f9329f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: ROMO1985 <romulo.coll@gmail.com>
+Date:   Sun Jul 25 23:56:41 2021 -0300
+
+    Entrega CLASE3_REACT
+
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex c1fb7b9..5ad6c75 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -5,12 +5,15 @@[m
+   "requires": true,[m
+   "packages": {[m
+     "": {[m
+[32m+[m[32m      "name": "calse03",[m
+       "version": "0.1.0",[m
+       "dependencies": {[m
+         "@testing-library/jest-dom": "^5.14.1",[m
+         "@testing-library/react": "^11.2.7",[m
+         "@testing-library/user-event": "^12.8.3",[m
+[32m+[m[32m        "bootstrap": "^5.0.2",[m
+         "react": "^17.0.2",[m
+[32m+[m[32m        "react-bootstrap": "^2.0.0-beta.4",[m
+         "react-dom": "^17.0.2",[m
+         "react-scripts": "4.0.3",[m
+         "web-vitals": "^1.1.2"[m
+[36m@@ -2719,6 +2722,34 @@[m
+         "node": ">= 8"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/@popperjs/core": {[m
+[32m+[m[32m      "version": "2.9.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@popperjs/core/-/core-2.9.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==",[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/popperjs"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@restart/context": {[m
+[32m+[m[32m      "version": "2.1.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@restart/context/-/context-2.1.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-INJYZQJP7g+IoDUh/475NlGiTeMfwTXUEr3tmRneckHIxNolGOW9CTq83S8cxq0CgJwwcMzMJFchxvlwe7Rk8Q==",[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">=16.3.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@restart/hooks": {[m
+[32m+[m[32m      "version": "0.3.27",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@restart/hooks/-/hooks-0.3.27.tgz",[m
+[32m+[m[32m      "integrity": "sha512-s984xV/EapUIfkjlf8wz9weP2O9TNKR96C68FfMEy2bE69+H4cNv3RD4Mf97lW7Htt7PjZrYTjSC8f3SB9VCXw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "dequal": "^2.0.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">=16.8.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/@rollup/plugin-node-resolve": {[m
+       "version": "7.1.3",[m
+       "resolved": "https://registry.npmjs.org/@rollup/plugin-node-resolve/-/plugin-node-resolve-7.1.3.tgz",[m
+[36m@@ -3485,6 +3516,11 @@[m
+       "resolved": "https://registry.npmjs.org/@types/html-minifier-terser/-/html-minifier-terser-5.1.2.tgz",[m
+       "integrity": "sha512-h4lTMgMJctJybDp8CQrxTUiiYmedihHWkjnF/8Pxseu2S6Nlfcy8kwboQ8yejh456rP2yWoEVm1sS/FVsfM48w=="[m
+     },[m
+[32m+[m[32m    "node_modules/@types/invariant": {[m
+[32m+[m[32m      "version": "2.2.34",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/invariant/-/invariant-2.2.34.tgz",[m
+[32m+[m[32m      "integrity": "sha512-lYUtmJ9BqUN688fGY1U1HZoWT1/Jrmgigx2loq4ZcJpICECm/Om3V314BxdzypO0u5PORKGMM6x0OXaljV1YFg=="[m
+[32m+[m[32m    },[m
+     "node_modules/@types/istanbul-lib-coverage": {[m
+       "version": "2.0.3",[m
+       "resolved": "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz",[m
+[36m@@ -3545,11 +3581,34 @@[m
+       "resolved": "https://registry.npmjs.org/@types/prettier/-/prettier-2.3.2.tgz",[m
+       "integrity": "sha512-eI5Yrz3Qv4KPUa/nSIAi0h+qX0XyewOliug5F2QAtuRg6Kjg6jfmxe1GIwoIRhZspD1A0RP8ANrPwvEXXtRFog=="[m
+     },[m
+[32m+[m[32m    "node_modules/@types/prop-types": {[m
+[32m+[m[32m      "version": "15.7.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ=="[m
+[32m+[m[32m    },[m
+     "node_modules/@types/q": {[m
+       "version": "1.5.5",[m
+       "resolved": "https://registry.npmjs.org/@types/q/-/q-1.5.5.tgz",[m
+       "integrity": "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="[m
+     },[m
+[32m+[m[32m    "node_modules/@types/react": {[m
+[32m+[m[32m      "version": "17.0.15",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/react/-/react-17.0.15.tgz",[m
+[32m+[m[32m      "integrity": "sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@types/prop-types": "*",[m
+[32m+[m[32m        "@types/scheduler": "*",[m
+[32m+[m[32m        "csstype": "^3.0.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@types/react-transition-group": {[m
+[32m+[m[32m      "version": "4.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-KibDWL6nshuOJ0fu8ll7QnV/LVTo3PzQ9aCPnRUYPfX7eZohHwLIdNHj7pftanREzHNP4/nJa8oeM73uSiavMQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@types/react": "*"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/@types/resolve": {[m
+       "version": "0.0.8",[m
+       "resolved": "https://registry.npmjs.org/@types/resolve/-/resolve-0.0.8.tgz",[m
+[36m@@ -3558,6 +3617,11 @@[m
+         "@types/node": "*"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/@types/scheduler": {[m
+[32m+[m[32m      "version": "0.16.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="[m
+[32m+[m[32m    },[m
+     "node_modules/@types/source-list-map": {[m
+       "version": "0.1.2",[m
+       "resolved": "https://registry.npmjs.org/@types/source-list-map/-/source-list-map-0.1.2.tgz",[m
+[36m@@ -3597,6 +3661,11 @@[m
+         "node": ">=0.10.0"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/@types/warning": {[m
+[32m+[m[32m      "version": "3.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@types/warning/-/warning-3.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI="[m
+[32m+[m[32m    },[m
+     "node_modules/@types/webpack": {[m
+       "version": "4.41.30",[m
+       "resolved": "https://registry.npmjs.org/@types/webpack/-/webpack-4.41.30.tgz",[m
+[36m@@ -5216,6 +5285,18 @@[m
+       "resolved": "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz",[m
+       "integrity": "sha1-aN/1++YMUes3cl6p4+0xDcwed24="[m
+     },[m
+[32m+[m[32m    "node_modules/bootstrap": {[m
+[32m+[m[32m      "version": "5.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-1Ge963tyEQWJJ+8qtXFU6wgmAVj9gweEjibUdbmcCEYsn38tVwRk8107rk2vzt6cfQcRr3SlZ8aQBqaD8aqf+Q==",[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/bootstrap"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "@popperjs/core": "^2.9.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/brace-expansion": {[m
+       "version": "1.1.11",[m
+       "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",[m
+[36m@@ -5762,6 +5843,11 @@[m
+         "node": ">=0.10.0"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/classnames": {[m
+[32m+[m[32m      "version": "2.3.1",[m
+[32m+[m[32m      "resolved": "https://r
