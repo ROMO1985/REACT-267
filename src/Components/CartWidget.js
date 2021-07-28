@@ -1,4 +1,4 @@
-import logo from "./Img/LogoTwiter.png"
+import logo from "../Img/LogoTwiter.png"
 import Figure from 'react-bootstrap/Figure'
 
 const CartWidget = () =>
