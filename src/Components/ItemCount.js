@@ -26,8 +26,10 @@ const restarContador = () => {
 }
 
 const confirm = () =>{
+   if(contador===0){}
+   else{
     ondAdd(contador)
-
+}
 }
 
 
