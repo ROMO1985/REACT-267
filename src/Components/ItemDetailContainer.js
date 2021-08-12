@@ -1,5 +1,6 @@
 import {useEffect,useState} from "react"
 import ItemDetail from "./ItemDetail"
+import ItemCount from "./ItemCount"
 
 const init = { id:1 , title:"PRODUCTO",  description:"PRODUCTO PRODUCTAZO PRODUCTECA PRODUCTAZA ", price:100, pictureUrl: "https://place-hold.it/300x500"}
 
@@ -21,6 +22,7 @@ const ItemDetailContainer = ()=>{
             return (
                 <div>
                     <p>Detalle Item</p>
+                    
                     <ItemDetail Items = {Items}/>
                 </div>
             )

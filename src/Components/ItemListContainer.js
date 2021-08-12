@@ -11,13 +11,12 @@ const productosInit = [
   ]
 
 
-const ItemListContainer = ({greeting}) =>{
+const ItemListContainer = () =>{
 
-  const params = useParams()
-  console.log( params)
  
   const [items, setItems] = useState([])
-
+  const params = useParams()
+  console.log( params)
   
   useEffect(() => {
 
@@ -50,7 +49,6 @@ const getItem = () => {
     return(
     <body>    
        <div>
-       <ItemCount stock = {5}  initial = {1} ondAdd={(cantidad)=>{ alert("la cantidad comprada es " +cantidad) }}/>
         
         <ItemList items={items}/>
         </div>
