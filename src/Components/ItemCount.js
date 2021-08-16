@@ -39,8 +39,7 @@ return (
 <Container>
 
 
-               
-                <Button variant="outline-danger" onClick = { restarContador}  >- </Button>{' '}
+                <Button to variant="outline-danger" onClick = { restarContador}  >- </Button>{' '}
                 <em>  {contador} </em> 
                 <Button variant="outline-success" onClick = { sumarContador}  >+ </Button>{' '}
                 

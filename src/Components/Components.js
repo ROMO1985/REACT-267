@@ -14,11 +14,10 @@ const Components = () => {
           <Router>
           <Header/>  
           <Switch>
-            <Route path="/categoria/2" component={ItemDetailContainer} exact/>    
+            <Route path="/1" component={ItemDetailContainer} />    
+             
             <Route path="/" component={ItemListContainer} />
-
-            <Route path="/categoria/:id" component={ItemListContainer} />
-                           
+            <Route path="/cart" component = "" exact /> 
 
           </Switch>
           </Router>
